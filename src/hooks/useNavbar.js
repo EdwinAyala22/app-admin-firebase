@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {Link} from "react-router-dom";
 
 export const useNavbar = () => {
@@ -9,9 +9,11 @@ export const useNavbar = () => {
     ["Ventas", "/ventas"],
   ];
 
-
+  const [open, setOpen] = useState(false);
 
   return {
-    RUTAS
+    RUTAS,
+    setOpen,
+    open
   };
 };

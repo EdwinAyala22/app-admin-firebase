@@ -6,15 +6,14 @@ import { useNavbar } from "./hooks/useNavbar";
 import { HomeApp } from "./views/Home";
 import { Usuarios } from "./views/Usuarios";
 import { Ventas } from "./views/Ventas";
-import logo from "./assets/img/logo.png"
 
 function App() {
 
-  const{RUTAS} = useNavbar();
+  const{RUTAS, open, setOpen} = useNavbar();
 
   return (
     <>
-      <Navbar links={RUTAS} logo={logo} />
+      <Navbar links={RUTAS} abrir={open} setAbrir={setOpen} />
       <Routes>
         <Route path='/' element={<HomeApp/>} />
         <Route path='/productos' element={<Productos/>} />
