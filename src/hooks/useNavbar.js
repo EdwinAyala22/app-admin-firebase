@@ -11,9 +11,14 @@ export const useNavbar = () => {
 
   const [open, setOpen] = useState(false);
 
+  const viewLogin = ()=>{
+    window.location.pathname = "/login";
+  }
+
   return {
     RUTAS,
     setOpen,
-    open
+    open,
+    viewLogin
   };
 };
