@@ -1,15 +1,15 @@
 import React from 'react';
-import { useEffect } from 'react';
+// import { useEffect } from 'react';
 import imgLogin from '../../assets/img/fondoCarroCompras.jpg';
 import { Buttons } from '../../components/Buttons';
 
 export const LoginApp = () => {
 
-    useEffect(() => {
+    // useEffect(() => {
       
-        document.title = "Login";
+    //     document.title = "Login";
       
-    }, [])
+    // }, [])
     
 
   return (
@@ -29,7 +29,7 @@ export const LoginApp = () => {
                     <input className='border-b-2 border-cyan-900 focus:border-teal-500 focus:outline-none p-2' type="password" />
                 </div>
                 <div className='flex justify-center my-4'>
-                    <p className='flex items-center text-sm'><input className='mr-2 checked:bg-teal-500' type="checkbox" />Recuérdame</p>
+                    <p className='flex items-center text-sm'><input className='mr-2 accent-teal-500' type="checkbox" />Recuérdame</p>
                     {/* <p>¿Olvidaste tu contraseña?</p> */}
                 </div>
                 <div className='flex justify-center items-center'>
