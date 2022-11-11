@@ -23,7 +23,7 @@ export const Navbar = ({ links, abrir, setAbrir, verLogin }) => {
           <ion-icon name={abrir ? 'close' : 'menu'}></ion-icon>
         </div>
 
-        <ul className={`md:flex md:items-center md:pb-0 pb-12 absolute md:static bg-teal-500 md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-500 ease-in ${abrir ? 'top-20 z-auto' : 'top-[-490px]'}`} >
+        <ul className={`md:flex md:items-center md:pb-0 pb-12 absolute md:static bg-teal-500 md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-500 ease-in ${abrir ? 'top-20 z-auto opacity-100' : 'top-[-490px] md:opacity-100 opacity-0 '}`} >
           {
             links.map(([title, url]) => (
               <li key={title} className="md:ml-8 text-lg font-semibold md:my-0 my-7" >
