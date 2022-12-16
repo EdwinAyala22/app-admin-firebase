@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Buttons } from "../Buttons";
-export const Navbar = ({ links, abrir, setAbrir, verLogin }) => {
+// import { Buttons } from "../Buttons";
+export const Navbar = ({ links, abrir, setAbrir, urlLogin }) => {
 
   return (
     <nav className="shadow-md w-full top-0 left-0">
@@ -32,7 +32,8 @@ export const Navbar = ({ links, abrir, setAbrir, verLogin }) => {
             ))
           }
 
-          <Buttons click={()=> verLogin() } clase="bg-white text-teal-500 py-2 px-6 rounded-full md:ml-8 hover:bg-teal-500 duration-500 border-2 border-white hover:text-white font-bold" texto={"Iniciar Sesión"} ></Buttons>
+          {/* <Buttons click={()=> verLogin() } clase="bg-white text-teal-500 py-2 px-6 rounded-full md:ml-8 hover:bg-teal-500 duration-500 border-2 border-white hover:text-white font-bold" texto={"Iniciar Sesión"} ></Buttons> */}
+          <Link to={urlLogin} onClick={() =>setAbrir(!abrir) } className='bg-white text-teal-500 py-2 px-6 rounded-full md:ml-8 hover:bg-teal-500 duration-500 border-2 border-white hover:text-white font-bold' >Iniciar Sesión</Link>
         </ul>
       </div>
     </nav>

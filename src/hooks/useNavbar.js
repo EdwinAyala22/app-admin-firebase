@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import {Link} from "react-router-dom";
+// import {Link} from "react-router-dom";
 
 export const useNavbar = () => {
   const RUTAS = [
@@ -9,16 +9,13 @@ export const useNavbar = () => {
     ["Ventas", "/ventas"],
   ];
 
+  const URL_LOGIN = "/login";
   const [open, setOpen] = useState(false);
-
-  const viewLogin = ()=>{
-    window.location.pathname = "/login";
-  }
 
   return {
     RUTAS,
     setOpen,
     open,
-    viewLogin
+    URL_LOGIN
   };
 };

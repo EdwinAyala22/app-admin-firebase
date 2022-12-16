@@ -10,11 +10,11 @@ import { LoginApp } from "./views/Login";
 
 function App() {
 
-  const{RUTAS, open, setOpen, viewLogin} = useNavbar();
+  const{RUTAS, open, setOpen, URL_LOGIN} = useNavbar();
 
   return (
     <>
-      <Navbar links={RUTAS} abrir={open} setAbrir={setOpen} verLogin={viewLogin} />
+      <Navbar links={RUTAS} abrir={open} setAbrir={setOpen} urlLogin={URL_LOGIN} />
       <Routes>
         <Route path='/' element={<HomeApp/>} />
         <Route path='/productos' element={<Productos/>} />
